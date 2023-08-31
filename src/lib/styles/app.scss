@@ -1,0 +1,19 @@
+@use '$lib/styles/ui/typography';
+@use '$lib/styles/ui/themes';
+@use '$lib/styles/ui/colors';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind variants;
+
+:root {
+	--transition-duration: 0.2s;
+}
+
+html {
+	* {
+		@apply transition-quick;
+		@apply duration-default;
+	}
+}

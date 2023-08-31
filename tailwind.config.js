@@ -106,8 +106,11 @@ export default {
 				'border-neutral-active': 'var(--border-neutral-active)',
 				'border-primary-active': 'var(--border-primary-active)',
 
-				'dx-green': {
-					DEFAULT: '00ff62',
+				"linkedin": "#0a66c2",
+				"twitter": "#24a4f3",
+
+				'mx-red': {
+					DEFAULT: '#ff9999',
 					50: '#e5ffef',
 					100: '#ccffe0',
 					200: '#99ffc0',

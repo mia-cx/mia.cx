@@ -1,0 +1,50 @@
+@import '@fontsource/montserrat/400';
+@import '@fontsource/montserrat/700';
+@import '@fontsource/redacted-script/400';
+@import '@fontsource/redacted-script/700';
+@import '@fontsource/raleway/200';
+@import '@fontsource/raleway/400';
+@import '@fontsource/raleway/700';
+
+html {
+	font-family: sans-serif;
+	font-size: 16px;
+	@apply font-body;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply font-heading;
+	}
+
+	h1 {
+		@apply text-3xl;
+	}
+	h2 {
+		@apply text-2xl;
+	}
+	h3 {
+		@apply text-lg;
+	}
+	h4 {
+		@apply text-base;
+	}
+	p {
+		@apply text-base;
+	}
+
+	a {
+		@apply inline-block;
+		&:not(.reset) {
+			&:hover {
+				@apply underline;
+			}
+			&:active {
+				@apply underline;
+			}
+		}
+	}
+}

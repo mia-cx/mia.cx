@@ -1,0 +1,14 @@
+html {
+	@apply bg-neutral;
+	@apply text-neutral;
+
+	a {
+		@apply text-link-neutral;
+		&:hover {
+			@apply text-link-neutral-hover;
+		}
+		&:active {
+			@apply text-link-neutral-active;
+		}
+	}
+}

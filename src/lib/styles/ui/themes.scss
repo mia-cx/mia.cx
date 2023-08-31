@@ -1,0 +1,150 @@
+@use 'sass:color';
+
+@mixin light-theme {
+	// Text
+	--text-neutral: theme(colors.zinc.700);
+	--text-primary: theme(colors.mx-red.700);
+
+	--text-link-neutral: theme(colors.zinc.900);
+	--text-link-primary: theme(colors.mx-red.700);
+
+	--text-link-neutral-hover: theme(colors.zinc.800);
+	--text-link-primary-hover: theme(colors.mx-red.500);
+
+	--text-link-neutral-active: theme(colors.zinc.950);
+	--text-link-primary-active: theme(colors.mx-red.900);
+
+	// Background
+	--background-neutral: theme(colors.zinc.100);
+	--background-neutral-alt: theme(colors.zinc.300);
+	--background-primary: theme(colors.mx-red.100);
+	--background-primary-alt: theme(colors.mx-red.300);
+	--background-accent: theme(colors.mx-red.400);
+
+	// Button
+	--button-background-neutral: var(--text-link-neutral);
+	--button-background-primary: var(--text-link-primary);
+	--button-background-accent: theme(colors.mx-red.500);
+
+	--button-background-neutral-hover: var(--text-link-neutral-hover);
+	--button-background-primary-hover: var(--text-link-primary-hover);
+	--button-background-accent-hover: theme(colors.mx-red.400);
+
+	--button-background-neutral-active: var(--text-link-neutral-active);
+	--button-background-primary-active: var(--text-link-primary-active);
+	--button-background-accent-active: theme(colors.mx-red.600);
+
+	--button-text-neutral: theme(colors.zinc.100);
+	--button-text-primary: theme(colors.zinc.100);
+	--button-text-accent: theme(colors.mx-red.100);
+
+	--button-text-neutral-hover: theme(colors.zinc.50);
+	--button-text-primary-hover: theme(colors.zinc.50);
+	--button-text-accent-hover: theme(colors.mx-red.50);
+
+	--button-text-neutral-active: theme(colors.zinc.200);
+	--button-text-primary-active: theme(colors.zinc.200);
+	--button-text-accent-active: theme(colors.mx-red.200);
+
+	// Border
+	--border-neutral: var(--text-neutral);
+	--border-primary: var(--text-primary);
+
+	--border-neutral-hover: theme(colors.zinc.700);
+	--border-primary-hover: theme(colors.mx-red.700);
+
+	--border-neutral-active: theme(colors.zinc.900);
+	--border-primary-active: theme(colors.mx-red.900);
+
+	// Colors
+	--information: theme(colors.blue.600);
+	--success: theme(colors.green.600);
+	--warning: theme(colors.amber.600);
+	--error: theme(colors.red.600);
+}
+
+@mixin dark-theme {
+	// Text
+	--text-neutral: theme(colors.zinc.300);
+	--text-primary: theme(colors.mx-red.300);
+
+	--text-link-neutral: theme(colors.zinc.100);
+	--text-link-primary: theme(colors.mx-red.400);
+
+	--text-link-neutral-hover: theme(colors.zinc.50);
+	--text-link-primary-hover: theme(colors.mx-red.300);
+
+	--text-link-neutral-active: theme(colors.zinc.300);
+	--text-link-primary-active: theme(colors.mx-red.500);
+
+	// Background
+	--background-neutral: theme(colors.zinc.900);
+	--background-neutral-alt: theme(colors.zinc.700);
+	--background-primary: theme(colors.mx-red.900);
+	--background-primary-alt: theme(colors.mx-red.700);
+	--background-accent: theme(colors.mx-red.600);
+
+	// Button
+	--button-background-neutral: var(--text-link-neutral);
+	--button-background-primary: var(--text-link-primary);
+	--button-background-accent: theme(colors.mx-red.500);
+
+	--button-background-neutral-hover: var(--text-link-neutral-hover);
+	--button-background-primary-hover: var(--text-link-primary-hover);
+	--button-background-accent-hover: theme(colors.mx-red.600);
+
+	--button-background-neutral-active: var(--text-link-neutral-active);
+	--button-background-primary-active: var(--text-link-primary-active);
+	--button-background-accent-active: theme(colors.mx-red.400);
+
+	--button-text-neutral: theme(colors.zinc.900);
+	--button-text-primary: theme(colors.zinc.900);
+	--button-text-accent: theme(colors.mx-red.900);
+
+	--button-text-neutral-hover: theme(colors.zinc.950);
+	--button-text-primary-hover: theme(colors.zinc.950);
+	--button-text-accent-hover: theme(colors.mx-red.950);
+
+	--button-text-neutral-active: theme(colors.zinc.800);
+	--button-text-primary-active: theme(colors.zinc.800);
+	--button-text-accent-active: theme(colors.mx-red.800);
+
+	// Border
+	--border-neutral: var(--text-neutral);
+	--border-primary: var(--text-primary);
+
+	--border-neutral-hover: theme(colors.zinc.300);
+	--border-primary-hover: theme(colors.mx-red.300);
+
+	--border-neutral-active: theme(colors.zinc.100);
+	--border-primary-active: theme(colors.mx-red.100);
+
+	// Colors
+	--information: theme(colors.blue.400);
+	--success: theme(colors.green.400);
+	--warning: theme(colors.amber.400);
+	--error: theme(colors.red.400);
+}
+
+:root {
+	--primary: theme(colors.mx-red.500);
+}
+
+[data-theme='dark'] {
+	@include dark-theme;
+}
+
+[data-theme='light'] {
+	@include light-theme;
+}
+
+// OS Default.
+:root:not([data-theme='dark'], [data-theme='light']) {
+	@media (prefers-color-scheme: light) {
+		@include light-theme;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		@include dark-theme;
+	}
+}
