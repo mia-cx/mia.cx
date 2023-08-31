@@ -19,13 +19,13 @@ pids
 *.pid.lock
 
 # Dependency directories
-/node_modules/
-/jspm_packages/
+node_modules/
+jspm_packages/
 
 # Build directories
-/build/
-/.svelte-kit/
-/package/
+build/
+.svelte-kit/
+package/
 
 # TypeScript cache
 *.tsbuildinfo
