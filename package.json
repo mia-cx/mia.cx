@@ -9,6 +9,7 @@
 		"preview": "vite preview",
 		"preview:host": "vite preview --host",
 		"wrangler:deploy": "vite build && wrangler pages deploy .svelte-kit/cloudflare",
+		"merge:prod": "git pull && git push && git switch main && git pull && git merge dev && git push && git switch dev",
 		"test": "playwright test",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
