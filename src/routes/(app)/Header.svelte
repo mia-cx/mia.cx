@@ -12,7 +12,7 @@
 </script>
 
 <header
-	class="z-10 sticky top-0 flex items-center h-[var(--header-height)] hover:[&_a]:text-primary font-bold bg-neutral-alt"
+	class="z-10 sticky top-0 flex items-center h-[var(--header-height)] hover:[&_a]:text-primary font-bold bg-neutral"
 >
 	<div class="container flex gap-8">
 		<!-- TODO Hamburger -->

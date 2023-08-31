@@ -1,29 +1,4 @@
 <footer class="py-8">
-	<!-- TODO
-		Kanalen
-			XON
-			Ede FM
-			1Vallei
-			Rhenen FM
-		
-		Social Media
-			Facebook : https://www.facebook.com/djkessie/
-			Instagram : https://www.instagram.com/dance.xperience/
-			YouTube : https://www.youtube.com/@Dance.Xperience
-
-		Terugluisteren : https://omroepede.nl/radioprogrammas/dancex/
-				
-		Sitemap
-			Home
-			Programma : /#programma
-			Artiesten : /artiesten
-			Fotoboek : /fotoboek
-
-		Contact : link to /#contact
-			info@dancex.nl
-			aanmelden@dancex.nl
-			mix@dancex.nl
-	-->
 	<div class="container grid grid-cols-1 md:grid-cols-4 items-start gap-4">
 		<section class="md:col-span-2 h-full flex flex-col justify-between">
 			<div>
@@ -31,7 +6,7 @@
 				<a
 					class="group font-bold inline-flex items-center gap-0.5"
 					target="_blank"
-					href="https://omroepede.nl/radioprogrammas/dancex"
+					href="https://github.com/mia-cx/mia-cx"
 				>
 					Contribute to this website
 					<iconify-icon

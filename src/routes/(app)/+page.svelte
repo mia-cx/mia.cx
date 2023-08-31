@@ -6,7 +6,9 @@
 
 <!-- Coming Soon -->
 <section id="coming-soon" class="justify-self-center">
-	<div class="container flex-shrink flex max-md:flex-col items-center justify-between gap-8 md:gap-32 py-8 md:py-16">
+	<div
+		class="container flex-shrink flex max-md:flex-col items-center justify-between gap-8 md:gap-32 py-8 md:py-16"
+	>
 		<div id="portrait" class="max-md:container !px-0 md:order-1 flex-none md:h-[50vh] md:h-[50svh]">
 			<img
 				srcset={portrait}
@@ -37,9 +39,14 @@
 			</p>
 			<br />
 			<p>
-				Alternatively, you can add me on discord: <a
-					href="https://discord.com/users/209048057441026049">@patchstep</a
-				>
+				Alternatively, you can add me on discord:
+				<a class="group" href="https://discord.com/users/209048057441026049">
+					@patchstep
+					<iconify-icon
+						icon="lucide:arrow-up-right"
+						class="opacity-50 group-hover:opacity-100 -ml-1"
+					/>
+				</a>
 			</p>
 		</div>
 	</div>
