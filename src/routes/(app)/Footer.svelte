@@ -121,11 +121,6 @@
 			<h2>Support</h2>
 			<p>
 				mia.cx<br />
-				Mia Maria Sophia Robin Riezebos<br />
-				Kalverstraat 4 BIS<br />
-				3512 TR, Utrecht<br />
-				Netherlands<br />
-				<br />
 				<a class="group" href="mailto:contact@mia.cx">
 					contact@mia.cx
 					<iconify-icon
