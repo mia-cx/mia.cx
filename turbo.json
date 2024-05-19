@@ -1,14 +1,40 @@
 {
-  "$schema": "https://turbo.build/schema.json",
-  "pipeline": {
-    "build": {
-      "dependsOn": ["^build"],
-      "outputs": [".svelte-kit/**", ".vercel/**"]
-    },
-    "lint": {},
-    "dev": {
-      "cache": false,
-      "persistent": true
+    "$schema": "https://turbo.build/schema.json",
+    "globalDependencies": ["**/*.{env,vars}*", "**/*.{env,vars}!.example"],
+    "experimentalUI": true,
+    "globalDotEnv": [".env"],
+    "pipeline": {
+        "build": {
+            "dependsOn": ["^build"],
+            "outputs": ["dist/**"]
+        },
+        "deploy": {
+            "dependsOn": ["build", "test"]
+        },
+        "dev": {
+            "cache": false,
+            "dependsOn": ["lint"],
+            "interactive": true,
+            "persistent": true
+        },
+        "dev:host": {
+            "cache": false,
+            "dependsOn": ["lint"],
+            "interactive": true,
+            "persistent": true
+        },
+        "format": {},
+        "lint": {
+            "dependsOn": ["format"]
+        },
+        "test": {
+            "dependsOn": ["build", "lint"],
+            "inputs": ["src/**", "test*/**", "static/**"],
+            "outputs": ["dist/**"]
+        },
+        "test:watch": {
+            "cache": false,
+            "persistent": true
+        }
     }
-  }
 }
