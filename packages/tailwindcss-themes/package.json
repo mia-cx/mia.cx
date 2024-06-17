@@ -43,7 +43,6 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "prepare": "pnpm run build",
-    "prepublish": "pnpm version",
     "publish:nightly": "pnpm publish --access public --tag nightly",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
