@@ -2,7 +2,7 @@
   "name": "@mia-cx/prettier-config",
   "version": "0.0.1",
   "private": true,
-  "description": "Shared Prettier config for @mia-cx/shopify-api",
+  "description": "Shared Prettier config for @mia-cx/mia.cx",
   "license": "MIT",
   "type": "module",
   "main": "index.js",
