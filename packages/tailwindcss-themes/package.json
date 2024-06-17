@@ -1,6 +1,6 @@
 {
   "name": "@mia-cx/tailwindcss-themes",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Tailwind plugin for theming. Provide media queries and/or multiple selectors, and variants for each theme will be generated.",
   "keywords": [
     "tailwind",
@@ -17,6 +17,7 @@
     "url": "git+https://github.com/mia-cx/mia.cx",
     "directory": "packages/tailwindcss-themes"
   },
+  "homepage": "https://github.com/mia-cx/mia.cx/tree/main/packages/tailwindcss-themes#readme",
   "license": "MIT",
   "author": "mia-cx",
   "type": "module",
