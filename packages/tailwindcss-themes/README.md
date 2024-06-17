@@ -1,6 +1,7 @@
 # @mia-cx/tailwindcss-themes
 
 A Tailwind plugin for theming. Provide media queries and/or multiple selectors, and variants for each theme will be generated!
+Heavily inspired and massively enabled by [JNavith/tailwindcss-theme-variants](https://github.com/JNavith/tailwindcss-theme-variants) 
 
 ## Getting Started
 
