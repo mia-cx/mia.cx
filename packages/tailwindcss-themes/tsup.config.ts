@@ -6,15 +6,15 @@ export default defineConfig({
 
 	entry: ['./src/**/*.ts'],
 
-	experimentalDts: true,
+	dts: true,
 	noExternal: ['cssesc', 'util-deprecate'],
 
-	format: ['esm', 'cjs'],
+	format: ['cjs', 'esm'],
 
-	minify: 'terser',
+	// minify: 'terser',
 	outDir: 'dist/',
 
-	splitting: true,
-	target: ['es2022'],
-	treeshake: 'recommended'
+	// splitting: true,
+	target: ['esnext'],
+	// treeshake: 'recommended'
 });

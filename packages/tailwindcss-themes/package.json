@@ -1,6 +1,6 @@
 {
   "name": "@mia-cx/tailwindcss-themes",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Tailwind plugin for theming. Provide media queries and/or multiple selectors, and variants for each theme will be generated.",
   "keywords": [
     "tailwind",
@@ -12,28 +12,38 @@
     "theming",
     "plugin"
   ],
+  "homepage": "https://github.com/mia-cx/mia.cx/tree/main/packages/tailwindcss-themes#readme",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mia-cx/mia.cx",
     "directory": "packages/tailwindcss-themes"
   },
-  "homepage": "https://github.com/mia-cx/mia.cx/tree/main/packages/tailwindcss-themes#readme",
   "license": "MIT",
   "author": "mia-cx",
   "type": "module",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
     }
   },
   "main": "dist/index.js",
+  "files": [
+    "./dist/**/*.{d.,}?(c)js"
+  ],
   "scripts": {
     "build": "tsup",
     "dev": "tsup --watch",
     "prepare": "pnpm run build",
-    "publish": "pnpm publish --access public",
+    "prepublish": "pnpm version",
     "publish:nightly": "pnpm publish --access public --tag nightly",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
