@@ -1,0 +1,7 @@
+{
+    "extends": "@mia-cx/tsconfig/index.json",
+    "compilerOptions": {
+        "checkJs": false,
+        "allowJs": false,
+    }
+}
