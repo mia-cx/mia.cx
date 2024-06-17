@@ -1,26 +1,26 @@
 {
   "private": true,
-  "workspaces": [
-    "apps/**/*",
-    "packages/**/*",
-    "config/*"
-  ],
   "scripts": {
     "build": "turbo run build",
+    "deploy": "turbo run deploy",
     "dev": "turbo run dev",
-    "format": "prettier --write .",
-    "lint": "turbo run lint"
+    "dev:host": "turbo run dev:host",
+    "format": "turbo run format",
+    "format:root": "prettier --write .",
+    "lint": "turbo run lint",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch"
   },
   "devDependencies": {
-    "@mia-cx/eslint-config": "workspace:^0.0.1",
-    "@mia-cx/prettier-config": "config/prettier-config",
-    "@mia-cx/tsconfig": "config/tsconfig",
+    "@mia-cx/eslint-config": "workspace:^",
+    "@mia-cx/prettier-config": "workspace:^",
+    "@mia-cx/tsconfig": "workspace:^",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
-    "prettier-plugin-svelte": "^3.2.2",
+    "prettier-plugin-svelte": "^3.2.3",
     "turbo": "latest"
   },
-  "packageManager": "bun@1.1.8",
+  "packageManager": "pnpm@8.9.0",
   "engines": {
     "node": ">=18"
   }

@@ -13,13 +13,13 @@
         },
         "dev": {
             "cache": false,
-            "dependsOn": ["lint"],
+            "dependsOn": [],
             "interactive": true,
             "persistent": true
         },
         "dev:host": {
             "cache": false,
-            "dependsOn": ["lint"],
+            "dependsOn": [],
             "interactive": true,
             "persistent": true
         },

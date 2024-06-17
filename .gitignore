@@ -9,24 +9,29 @@
 **/*.log*
 
 # Dependency directories
-**/node_modules/
+**/node_modules
 
 # TypeScript cache
 **/*.tsbuildinfo
 
 # dotenv environment variable files
-**/*.env
-**/*.env.*
-!**/*.env.example
-!**/*.env.*.example
+**/.local
+**/.*.local
 
 **/.vars
 **/.*.vars
-!**/.vars.example
-!**/.*.vars.example
 
 # Output files
+**/.dist
 **/dist
+**/.svelte-kit
+**/svelte-kit
+**/.tsup
+**/tsup
+**/.build
+**/build
+**/.out
+**/out
 
 # Test files
 **/coverage
@@ -36,3 +41,7 @@
 
 # vercel
 **/.vercel
+
+# vite
+**/.vite
+**/vite.config.{ts,js}.timestamp-*
