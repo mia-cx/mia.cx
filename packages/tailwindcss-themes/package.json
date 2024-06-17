@@ -33,6 +33,8 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "prepare": "pnpm run build",
+    "publish": "pnpm publish --access public",
+    "publish:nightly": "pnpm publish --access public --tag nightly",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
