@@ -6,7 +6,7 @@
 [subrepo]
 	remote = git@github.com:mia-cx/shopify-api
 	branch = main
-	commit = d3aaff8ee35674e9c83b26231e9e830bec23dfc1
-	parent = 82f49a1c250dd3953ab539cb464c50365d5562ab
+	commit = 2c9bd82459a816f133e7260be0a127f3eb774d18
+	parent = f6fa00dbc87d07f928a63f2a3a0e82fe5587a41e
 	method = merge
 	cmdver = 0.4.6
