@@ -1,1 +1,0 @@
-# Shopify Admin API wrapper

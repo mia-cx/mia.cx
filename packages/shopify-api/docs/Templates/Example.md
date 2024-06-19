@@ -1,3 +1,0 @@
-# Example
-
-An example Template
