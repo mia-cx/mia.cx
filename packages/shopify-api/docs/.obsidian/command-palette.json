@@ -1,0 +1,13 @@
+{
+    "pinned": [
+        "workspace:toggle-pin",
+        "editor:insert-mathblock",
+        "open-with-default-app:show",
+        "file-explorer:new-file",
+        "note-composer:split-file",
+        "note-composer:extract-heading",
+        "note-composer:merge-file",
+        "workspace:split-vertical",
+        "workspace:split-horizontal"
+    ]
+}

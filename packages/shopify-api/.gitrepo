@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:mia-cx/shopify-api
+	branch = main
+	commit = d3aaff8ee35674e9c83b26231e9e830bec23dfc1
+	parent = 82f49a1c250dd3953ab539cb464c50365d5562ab
+	method = merge
+	cmdver = 0.4.6

@@ -1,0 +1,10 @@
+# obsidian
+.obsidian/workspace*
+.obsidian-git-data
+# plugins except for settings
+.obsidian/plugins/**/*.js*
+.obsidian/plugins/**/*.css
+!.obsidian/plugins/**/data.json
+
+null*
+Untitled*
