@@ -4,8 +4,9 @@
 ; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
 ;
 [subrepo]
-	remote = none
-	branch = master
-	commit = 
+	remote = git@github.com:mia-cx/tailwindcss-themes
+	branch = main
+	commit = ed656b633785c4fc3540bd9c711115fccf6edcab
 	method = merge
 	cmdver = 0.4.6
+	parent = c0f12a8609c74eb694313adda0fe9161504c9cbd
