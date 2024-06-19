@@ -1,0 +1,12 @@
+; DO NOT EDIT (unless you know what you are doing)
+;
+; This subdirectory is a git "subrepo", and this file is maintained by the
+; git-subrepo command. See https://github.com/ingydotnet/git-subrepo#readme
+;
+[subrepo]
+	remote = git@github.com:mia-cx/tissues
+	branch = main
+	commit = 793f56f724bcfca41db96a89ce3b4f06452e374b
+	parent = 3518e773648e86d3bf2d4cf37ab3b3ff5804984e
+	method = merge
+	cmdver = 0.4.6
