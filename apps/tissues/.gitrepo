@@ -6,7 +6,7 @@
 [subrepo]
 	remote = git@github.com:mia-cx/tissues
 	branch = main
-	commit = 793f56f724bcfca41db96a89ce3b4f06452e374b
-	parent = 3518e773648e86d3bf2d4cf37ab3b3ff5804984e
+	commit = 60c91ecc09ae71e0d9068517d26039524fe31d58
+	parent = e271516e8ff508bd3e2ef0cffffca16b1fb4cb2a
 	method = merge
 	cmdver = 0.4.6
