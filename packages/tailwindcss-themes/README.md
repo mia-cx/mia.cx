@@ -1,4 +1,4 @@
-# @mia-cx/tailwindcss-themes
+# [@mia-cx/tailwindcss-themes](https://github.com/mia-cx/tailwindcss-themes)
 
 A Tailwind plugin for theming. Provide media queries and/or multiple selectors, and variants for each theme will be generated!
 
