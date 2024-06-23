@@ -1,13 +1,13 @@
-import { type Config } from 'prettier';
+import { type Config } from "prettier";
 
 const overridableDefaults: Config = {
-	endOfLine: 'lf',
+	endOfLine: "lf",
 
 	printWidth: 80,
 	tabWidth: 4,
 
 	useTabs: true,
-}
+};
 
 const base: Config = {
 	...overridableDefaults,
@@ -17,9 +17,12 @@ const base: Config = {
 	experimentalTernaries: true,
 
 	insertPragma: true,
-	proseWrap: 'always',
 
-	quoteProps: 'consistent',
+	plugins: ["prettier-plugin-packagejson"],
+
+	proseWrap: "always",
+
+	quoteProps: "consistent",
 
 	singleAttributePerLine: true,
 
@@ -32,7 +35,7 @@ const base: Config = {
 			excludeFiles: ["package.json"],
 			options: {
 				useTabs: false,
-			}
+			},
 		},
 		{
 			// Package.json
@@ -40,15 +43,15 @@ const base: Config = {
 			options: {
 				tabWidth: 2,
 				useTabs: false,
-			}
+			},
 		},
 		{
 			// Markdown
-			files: ["*.md?(?(sve)x)", "*.svx"],
+			files: ["*.md?(x)"],
 			options: {
 				tabWidth: 2,
 				useTabs: false,
-			}
+			},
 		},
 		{
 			// HTML
@@ -56,14 +59,14 @@ const base: Config = {
 			options: {
 				printWidth: 120,
 				useTabs: false,
-			}
+			},
 		},
 		{
 			// CSS
 			files: ["*.?(s)[ac]ss", "*.less"],
 			options: {
 				useTabs: false,
-			}
+			},
 		},
 		{
 			// YAML
@@ -71,7 +74,7 @@ const base: Config = {
 			options: {
 				tabWidth: 2,
 				useTabs: false,
-			}
+			},
 		},
 		{
 			// JS/TS
@@ -84,9 +87,9 @@ const base: Config = {
 			options: {
 				tabWidth: 8,
 				useTabs: true,
-			}
-		}
-	]
-}
+			},
+		},
+	],
+};
 
 export default base;

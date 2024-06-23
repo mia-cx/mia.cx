@@ -33,7 +33,8 @@
     "./typescript/node18": "./src/typescript/tsconfig.node18.json",
     "./typescript/node20": "./src/typescript/tsconfig.node20.json",
     "./typescript/nodenext": "./src/typescript/tsconfig.nodenext.json",
-    "./typescript/svelte": "./src/typescript/tsconfig.svelte.json"
+    "./typescript/svelte": "./src/typescript/tsconfig.svelte.json",
+    "./typescript/tsup": "./src/typescript/tsconfig.tsup.json"
   },
   "main": "./index.js",
   "files": [
@@ -49,24 +50,72 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@eslint/js": "^9.5.0",
     "@microsoft/api-extractor": "^7.47.0",
+    "@types/eslint": "^8.56.10",
     "@vercel/style-guide": "^6.0.0",
     "eslint": "^8.57.0",
+    "eslint-plugin-svelte": "^2.40.0",
     "prettier": "^3.3.2",
+    "prettier-plugin-astro": "^0.14.0",
+    "prettier-plugin-glsl": "^0.2.0",
+    "prettier-plugin-nginx": "^1.0.3",
+    "prettier-plugin-packagejson": "^2.5.0",
+    "prettier-plugin-sh": "^0.14.0",
+    "prettier-plugin-svelte": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.6.5",
+    "prettier-plugin-xml": "^0.1.0",
     "terser": "^5.31.1",
     "tsup": "^8.1.0",
-    "typescript": "^5.5.2"
+    "typescript": "^5.5.2",
+    "typescript-eslint": "7.13.1"
   },
   "peerDependencies": {
-    "eslint": "^8.57.0",
-    "prettier": "^3.3.2",
-    "typescript": "^5.5.2"
+    "eslint": "^8.0.0",
+    "eslint-plugin-svelte": "^2.0.0",
+    "prettier": "^3.0.0",
+    "prettier-plugin-astro": "^0.14.0",
+    "prettier-plugin-glsl": "^0.2.0",
+    "prettier-plugin-nginx": "^1.0.0",
+    "prettier-plugin-packagejson": "^2.0.0",
+    "prettier-plugin-sh": "^0.14.0",
+    "prettier-plugin-svelte": "^3.0.0",
+    "prettier-plugin-tailwindcss": "^0.6.0",
+    "prettier-plugin-xml": "^0.1.0",
+    "typescript": "^5.0.0"
   },
   "peerDependenciesMeta": {
     "eslint": {
       "optional": true
     },
+    "eslint-plugin-svelte": {
+      "optional": true
+    },
     "prettier": {
+      "optional": true
+    },
+    "prettier-plugin-astro": {
+      "optional": true
+    },
+    "prettier-plugin-glsl": {
+      "optional": true
+    },
+    "prettier-plugin-nginx": {
+      "optional": true
+    },
+    "prettier-plugin-packagejson": {
+      "optional": true
+    },
+    "prettier-plugin-sh": {
+      "optional": true
+    },
+    "prettier-plugin-svelte": {
+      "optional": true
+    },
+    "prettier-plugin-tailwindcss": {
+      "optional": true
+    },
+    "prettier-plugin-xml": {
       "optional": true
     },
     "typescript": {

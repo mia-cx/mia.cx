@@ -1,27 +1,30 @@
-import { defineConfig } from 'tsup';
+import { defineConfig } from "tsup";
 
 export default defineConfig({
 	cjsInterop: true,
 	clean: true,
 
-	entry: ['./src/**/*.[tj]s'],
-	external: ['prettier'],
+	entry: ["./src/**/*.[tj]s"],
+	external: [
+		"eslint",
+		"eslint-plugin-svelte",
+		"prettier",
+		"prettier-plugin-svelte",
+		"prettier-plugin-tailwindcss",
+		"typescript",
+	],
 
 	// experimentalDts: true,
 	dts: true,
-	// dts: {
-	// 	resolve: true,
-	// 	// entry: ['./src/**/*.[tj]s'],
-	// },
 
-	format: ['cjs', 'esm'],
+	format: ["cjs", "esm"],
 
-	minify: 'terser',
-	outDir: 'dist/',
+	minify: "terser",
+	outDir: "dist/",
 
 	// splitting: true,
-	target: ['esnext'],
-	treeshake: 'recommended',
+	target: ["esnext"],
+	treeshake: "recommended",
 
-	tsconfig: './tsconfig.json',
+	tsconfig: "./tsconfig.json",
 });

@@ -1,36 +1,25 @@
 import { Config } from "prettier";
-import { PrettierConfig as SveltePrettierConfig } from "prettier-plugin-svelte";
-import { type Override } from "../lib/types/prettier";
-
+import { Override } from "../lib/types/prettier";
 import base from "./base";
 import { tailwindcss } from "./extra";
+import svelte from "./svelte";
 
-export const svelte: SveltePrettierConfig = {
+export const astro: Config = {
 	...base,
-	svelteStrictMode: true,
-
 	plugins: [
 		...new Set([
 			...(base.plugins as string[]),
-			"prettier-plugin-svelte",
+			"prettier-plugin-astro",
 		]),
 	],
+
 	overrides: [
 		...new Set([
 			...(base.overrides as Override[]),
 			{
-				files: ["*.svelte"],
+				files: ["*.astro"],
 				options: {
-					parser: "svelte",
-				},
-			},
-			{
-				// Markdown
-				files: ["*.svx"],
-				options: {
-					tabWidth: 2,
-					useTabs: false,
-					parser: "markdown",
+					parser: "astro",
 				},
 			},
 		]),
@@ -39,18 +28,23 @@ export const svelte: SveltePrettierConfig = {
 
 export default {
 	...base,
+	...astro,
 	...svelte,
 	...tailwindcss,
+
 	plugins: [
 		...new Set([
 			...(base.plugins as string[]),
+			...(astro.plugins as string[]),
 			...(svelte.plugins as string[]),
 			...(tailwindcss.plugins as string[]),
 		]),
 	],
+
 	overrides: [
 		...new Set([
 			...(base.overrides as Override[]),
+			...(astro.overrides as Override[]),
 			...(svelte.overrides as Override[]),
 			...(tailwindcss.overrides as Override[]),
 		]),
