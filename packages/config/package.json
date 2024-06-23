@@ -38,7 +38,7 @@
   },
   "main": "./index.js",
   "files": [
-    "./dist/**/*.?(d.)?(c)[jt]s?(on?([c5]))",
+    "./dist/**/*.?(d.)?([cm])[jt]s?(on?([c5]))",
     "./src/**/*.json?([c5])"
   ],
   "scripts": {
