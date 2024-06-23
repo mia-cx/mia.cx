@@ -7,7 +7,6 @@ export default defineConfig({
 	entry: ['./src/**/*.ts'],
 
 	dts: true,
-	noExternal: ['cssesc', 'util-deprecate'],
 
 	format: ['cjs', 'esm'],
 
