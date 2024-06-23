@@ -6,7 +6,7 @@
 [subrepo]
 	remote = git@github.com:mia-cx/meta-snippets
 	branch = main
-	commit = 9af203d132eff0cf812d1d95e6e875fb7c79909b
+	commit = 414471a87611b393436a5cba25848e975a50211c
 	method = merge
 	cmdver = 0.4.6
-	parent = 0e1d05fe92459fa2ed4153265703ceddb90e41d8
+	parent = ff66bfde7b53117635ddb282ecdad516dfa57f06
