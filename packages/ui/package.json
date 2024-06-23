@@ -22,7 +22,7 @@
     "dev": "vite dev",
     "dev:host": "vite dev --host",
     "format": "prettier --write . --ignore-path ../../.*ignore",
-    "lint": "prettier --check . && eslint .",
+    "lint": "prettier --check . --ignore-path ../../.*ignore && eslint .",
     "package": "svelte-kit sync && svelte-package && publint",
     "prepublishOnly": "npm run package",
     "preview": "vite preview"
