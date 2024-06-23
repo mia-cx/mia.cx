@@ -6,6 +6,7 @@
 [subrepo]
 	remote = git@github.com:mia-cx/config
 	branch = main
-	commit = 
+	commit = ea6de263dabae98848188af56dc36452a30dc0d1
 	method = merge
 	cmdver = 0.4.6
+	parent = 9ec4267a3473a25c23aed511efa2a686408cedd1
