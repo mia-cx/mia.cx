@@ -21,7 +21,6 @@ updates:
       - dependencies
     reviewers:
       - 'mia-riezebos'
-    versioning-strategy: increase-if-necessary
 
   - package-ecosystem: pnpm # See documentation for possible values
     directory: '/' # Location of package manifests
