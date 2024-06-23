@@ -13,9 +13,7 @@
     "test:watch": "turbo run test:watch"
   },
   "devDependencies": {
-    "@mia-cx/eslint-config": "workspace:^",
-    "@mia-cx/prettier-config": "workspace:^",
-    "@mia-cx/tsconfig": "workspace:^",
+    "@mia-cx/config": "workspace:^",
     "eslint": "^8.57.0",
     "prettier": "^3.3.2",
     "prettier-plugin-svelte": "^3.2.4",
