@@ -1,5 +1,5 @@
-const base = import("@mia-cx/prettier-config");
+import base from '@mia-cx/prettier-config';
 
-module.export = {
+export default {
 	...base,
 };

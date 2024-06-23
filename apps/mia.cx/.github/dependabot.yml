@@ -26,10 +26,10 @@ updates:
   - package-ecosystem: pnpm # See documentation for possible values
     directory: '/' # Location of package manifests
     schedule:
-        day: saturday
-        interval: weekly
-        time: '10:00'
-        timezone: Europe/Amsterdam
+      day: saturday
+      interval: weekly
+      time: '10:00'
+      timezone: Europe/Amsterdam
     assignees:
       - 'mia-riezebos'
     allow:
