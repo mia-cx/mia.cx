@@ -45,3 +45,5 @@
 # vite
 **/.vite
 **/vite.config.{ts,js}.timestamp-*
+
+apps/example
