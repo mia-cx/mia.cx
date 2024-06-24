@@ -5,21 +5,14 @@ export default defineConfig({
 	clean: true,
 
 	entry: ["./src/**/*.[tj]s"],
-	external: [
-		"eslint",
-		"eslint-plugin-svelte",
-		"prettier",
-		"prettier-plugin-svelte",
-		"prettier-plugin-tailwindcss",
-		"typescript",
-	],
+	external: ["eslint", "prettier", "typescript"],
 
 	// experimentalDts: true,
 	dts: true,
 
 	format: ["cjs", "esm"],
 
-	minify: "terser",
+	// minify: "terser",
 	outDir: "dist/",
 
 	// splitting: true,

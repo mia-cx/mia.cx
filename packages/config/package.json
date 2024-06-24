@@ -28,18 +28,32 @@
       "import": "./dist/prettier/*.js",
       "types": "./dist/prettier/*.d.?(c)ts"
     },
+    "./tailwindcss": {
+      "require": "./dist/tailwindcss/base.cjs",
+      "import": "./dist/tailwindcss/base.js",
+      "types": "./dist/tailwindcss/base.d.ts"
+    },
+    "./tailwindcss/*": {
+      "require": "./dist/tailwindcss/*.cjs",
+      "import": "./dist/tailwindcss/*.js",
+      "types": "./dist/tailwindcss/*.d.?(c)ts"
+    },
     "./typescript": "./src/typescript/tsconfig.base.json",
     "./typescript/node16": "./src/typescript/tsconfig.node16.json",
     "./typescript/node18": "./src/typescript/tsconfig.node18.json",
     "./typescript/node20": "./src/typescript/tsconfig.node20.json",
     "./typescript/nodenext": "./src/typescript/tsconfig.nodenext.json",
     "./typescript/svelte": "./src/typescript/tsconfig.svelte.json",
-    "./typescript/tsup": "./src/typescript/tsconfig.tsup.json"
+    "./typescript/tsup": "./src/typescript/tsconfig.tsup.json",
+    ".": {
+      "types": "./types/*.ts"
+    }
   },
   "main": "./index.js",
   "files": [
     "./dist/**/*.?(d.)?([cm])[jt]s?(on?([c5]))",
-    "./src/**/*.json?([c5])"
+    "./src/**/*.json?([c5])",
+    "./types/**/*.ts"
   ],
   "scripts": {
     "build": "tsup",
@@ -49,14 +63,17 @@
     "prepare": "pnpm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "devDependencies": {
-    "@eslint/js": "^9.5.0",
-    "@microsoft/api-extractor": "^7.47.0",
-    "@types/eslint": "^8.56.10",
+  "dependencies": {
+    "@prettier/plugin-xml": "^3.4.1",
+    "@typescript-eslint/eslint-plugin": "^7.13.1",
+    "@typescript-eslint/parser": "^7.13.1",
+    "@typescript-eslint/utils": "^7.13.1",
     "@vercel/style-guide": "^6.0.0",
-    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsonc": "^2.16.0",
+    "eslint-plugin-markdown": "^5.0.0",
+    "eslint-plugin-mdx": "^3.1.5",
     "eslint-plugin-svelte": "^2.40.0",
-    "prettier": "^3.3.2",
     "prettier-plugin-astro": "^0.14.0",
     "prettier-plugin-glsl": "^0.2.0",
     "prettier-plugin-nginx": "^1.0.3",
@@ -64,62 +81,37 @@
     "prettier-plugin-sh": "^0.14.0",
     "prettier-plugin-svelte": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.6.5",
-    "prettier-plugin-xml": "^0.1.0",
+    "typescript-eslint": "8.0.0-alpha.30"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.5.0",
+    "@microsoft/api-extractor": "^7.47.0",
+    "@types/eslint": "^8.56.10",
+    "@types/eslint-config-prettier": "^6.11.3",
+    "@types/eslint-plugin-markdown": "^2.0.2",
+    "eslint": "^8.57.0",
+    "prettier": "^3.3.2",
     "terser": "^5.31.1",
     "tsup": "^8.1.0",
-    "typescript": "^5.5.2",
-    "typescript-eslint": "7.13.1"
+    "typescript": "^5.5.2"
   },
   "peerDependencies": {
     "eslint": "^8.0.0",
-    "eslint-plugin-svelte": "^2.0.0",
     "prettier": "^3.0.0",
-    "prettier-plugin-astro": "^0.14.0",
-    "prettier-plugin-glsl": "^0.2.0",
-    "prettier-plugin-nginx": "^1.0.0",
-    "prettier-plugin-packagejson": "^2.0.0",
-    "prettier-plugin-sh": "^0.14.0",
-    "prettier-plugin-svelte": "^3.0.0",
-    "prettier-plugin-tailwindcss": "^0.6.0",
-    "prettier-plugin-xml": "^0.1.0",
     "typescript": "^5.0.0"
   },
   "peerDependenciesMeta": {
     "eslint": {
       "optional": true
     },
-    "eslint-plugin-svelte": {
-      "optional": true
-    },
     "prettier": {
-      "optional": true
-    },
-    "prettier-plugin-astro": {
-      "optional": true
-    },
-    "prettier-plugin-glsl": {
-      "optional": true
-    },
-    "prettier-plugin-nginx": {
-      "optional": true
-    },
-    "prettier-plugin-packagejson": {
-      "optional": true
-    },
-    "prettier-plugin-sh": {
-      "optional": true
-    },
-    "prettier-plugin-svelte": {
-      "optional": true
-    },
-    "prettier-plugin-tailwindcss": {
-      "optional": true
-    },
-    "prettier-plugin-xml": {
       "optional": true
     },
     "typescript": {
       "optional": true
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

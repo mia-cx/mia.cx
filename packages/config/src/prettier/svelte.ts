@@ -1,6 +1,6 @@
 import { Config } from "prettier";
 import { PrettierConfig as SveltePrettierConfig } from "prettier-plugin-svelte";
-import { type Override } from "../lib/types/prettier";
+import { type Override } from "../../types/prettier";
 
 import base from "./base";
 import { tailwindcss } from "./extra";

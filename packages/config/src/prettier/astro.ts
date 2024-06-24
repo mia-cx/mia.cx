@@ -1,5 +1,5 @@
 import { Config } from "prettier";
-import { Override } from "../lib/types/prettier";
+import { Override } from "../../types/prettier";
 import base from "./base";
 import { tailwindcss } from "./extra";
 import svelte from "./svelte";

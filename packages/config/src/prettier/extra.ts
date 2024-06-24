@@ -1,7 +1,7 @@
 import { Config } from "prettier";
 
 import base from "./base";
-import { Override } from "../lib/types/prettier";
+import { Override } from "../../types/prettier";
 import { PluginOptions as TailwindCSSPrettierConfig } from "prettier-plugin-tailwindcss";
 
 /**
