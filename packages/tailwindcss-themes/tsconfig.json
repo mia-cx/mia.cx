@@ -1,7 +1,7 @@
 {
-    "extends": "@mia-cx/tsconfig/index.json",
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "extends": "@mia-cx/config/typescript/tsup",
     "compilerOptions": {
-        "checkJs": false,
-        "allowJs": false,
+        "lib": ["es2023", "dom"]
     }
 }

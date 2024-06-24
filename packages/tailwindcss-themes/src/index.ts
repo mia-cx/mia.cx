@@ -47,7 +47,7 @@ const thisPlugin: ThisPlugin = plugin.withOptions((options: Partial<ThisPluginOp
 			fallbackTheme = maybeFallbackTheme[0];
 		} else {
 			// if the fallback is a boolean, set the fallback theme to the first available theme
-			fallbackTheme = themes[0][0];
+			fallbackTheme = themes[0]![0];
 		}
 
 		// if there is only one theme, there is no need to add a fallback, warn the user.

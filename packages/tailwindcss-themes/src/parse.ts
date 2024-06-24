@@ -21,7 +21,7 @@ export const prepend = (selector: Selectors, parent: Selectors) => {
 		(node) => node.type === 'selector' || node.type === 'combinator'
 	);
 
-	const _parts = parts.map((part) => unparse(part[0])).flat();
+	const _parts = parts.map((part) => unparse(part[0] as Node)).flat();
 
 	return _parts.map((part) => `${parent}${part.trim()}`).join(', ');
 };
