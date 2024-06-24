@@ -17,9 +17,7 @@
     "test:unit": "vitest"
   },
   "devDependencies": {
-    "@mia-cx/eslint-config": "workspace:^0.0.1",
-    "@mia-cx/prettier-config": "workspace:^0.0.1",
-    "@mia-cx/tsconfig": "workspace:^0.0.1",
+    "@mia-cx/config": "workspace:*",
     "@playwright/test": "^1.44.1",
     "@sveltejs/adapter-auto": "^3.2.2",
     "@sveltejs/kit": "^2.5.17",

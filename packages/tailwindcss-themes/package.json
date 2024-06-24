@@ -46,7 +46,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@mia-cx/tsconfig": "workspace:^",
+    "@mia-cx/config": "workspace:^",
     "@microsoft/api-extractor": "^7.47.0",
     "cssesc": "^3.0.0",
     "eslint": "8.57.0",
