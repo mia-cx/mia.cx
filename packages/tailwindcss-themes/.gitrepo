@@ -6,7 +6,7 @@
 [subrepo]
 	remote = git@github.com:mia-cx/tailwindcss-themes
 	branch = main
-	commit = 52f601495c05c3af2ecfd668ba6efd6a0e4d25bf
+	commit = a9bc2e8f7e16b817471253dbc4fd4e2e50547655
 	method = merge
 	cmdver = 0.4.6
-	parent = b7fb1c00a7a55e9d2c91cf3605d255d2db777d94
+	parent = 6bc2c21f8029b762e864a33fd9ffe132eaa720a8
